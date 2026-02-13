@@ -8,11 +8,10 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/carabiner-dev/signer/sts"
 	"github.com/sigstore/sigstore/pkg/oauthflow"
 	"github.com/spiffe/go-spiffe/v2/svid/jwtsvid"
 	"github.com/spiffe/go-spiffe/v2/workloadapi"
-
-	"github.com/carabiner-dev/signer/sts"
 )
 
 var _ sts.Provider = &Spire{}
@@ -37,7 +36,7 @@ func (spire *Spire) Provide(ctx context.Context, audience string) (*oauthflow.OI
 		path = p
 	}
 
-	// If the path is not found, then we asume we're not in a spiffe env
+	// If the path is not found, then we assume we're not in a spiffe env
 	if _, err := os.Stat(path); err != nil {
 		return nil, nil
 	}
@@ -46,7 +45,7 @@ func (spire *Spire) Provide(ctx context.Context, audience string) (*oauthflow.OI
 	if err != nil {
 		return nil, fmt.Errorf("building spire client: %w", err)
 	}
-	defer client.Close()
+	defer client.Close() //nolint:errcheck
 
 	// Fetch the SVID from the spire server
 	svid, err := client.FetchJWTSVID(ctx, jwtsvid.Params{
