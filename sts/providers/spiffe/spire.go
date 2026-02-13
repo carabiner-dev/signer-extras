@@ -23,6 +23,11 @@ const (
 	defaultSocketPath = "/var/run/spire/agent.sock"
 )
 
+// Register registers the spire provider in the sts DefaultProviders collection
+func Register() {
+	sts.RegisterProvider("spire", &Spire{})
+}
+
 // Provide returns a token for the spire agent by fetching a SVID from the
 // socket. The socket location is read from SPIFFE_ENDPOINT_SOCKET or from
 // /var/run/spire/agent.sock if unset.
