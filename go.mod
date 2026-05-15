@@ -3,8 +3,8 @@ module github.com/carabiner-dev/signer-extras
 go 1.25.9
 
 require (
-	github.com/carabiner-dev/signer v0.4.4
-	github.com/sigstore/sigstore v1.10.5
+	github.com/carabiner-dev/signer v0.4.5
+	github.com/sigstore/sigstore v1.10.6
 	github.com/spiffe/go-spiffe/v2 v2.6.0
 )
 
