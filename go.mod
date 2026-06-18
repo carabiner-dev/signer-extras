@@ -5,7 +5,7 @@ go 1.25.11
 require (
 	github.com/carabiner-dev/signer v0.5.2
 	github.com/sigstore/sigstore v1.10.8
-	github.com/spiffe/go-spiffe/v2 v2.7.0
+	github.com/spiffe/go-spiffe/v2 v2.8.0
 )
 
 require (
