@@ -7,6 +7,7 @@ import (
 	"context"
 	"fmt"
 	"os"
+	"path/filepath"
 
 	"github.com/carabiner-dev/signer/sts"
 	"github.com/sigstore/sigstore/pkg/oauthflow"
@@ -33,7 +34,7 @@ func Register() {
 func (spire *Spire) Provide(ctx context.Context, audience string) (*oauthflow.OIDCIDToken, error) {
 	path := defaultSocketPath
 	if p := os.Getenv("SPIFFE_ENDPOINT_SOCKET"); p != "" {
-		path = p
+		path = filepath.Clean(p)
 	}
 
 	// If the path is not found, then we assume we're not in a spiffe env
