@@ -3,7 +3,7 @@ module github.com/carabiner-dev/signer-extras
 go 1.25.12
 
 require (
-	github.com/carabiner-dev/signer v0.5.4
+	github.com/carabiner-dev/signer v0.6.1
 	github.com/sigstore/sigstore v1.10.9
 	github.com/spiffe/go-spiffe/v2 v2.8.1
 )
@@ -14,7 +14,7 @@ require (
 	github.com/go-jose/go-jose/v4 v4.1.4 // indirect
 	github.com/pkg/browser v0.0.0-20240102092130-5ac0b6a4141c // indirect
 	github.com/secure-systems-lab/go-securesystemslib v0.11.0 // indirect
-	github.com/sirupsen/logrus v1.9.4 // indirect
+	github.com/sirupsen/logrus v1.10.1 // indirect
 	github.com/youmark/pkcs8 v0.0.0-20240726163527-a2c0da244d78 // indirect
 	go.opentelemetry.io/otel/sdk/metric v1.45.0 // indirect
 	golang.org/x/crypto v0.54.0 // indirect
@@ -25,5 +25,5 @@ require (
 	golang.org/x/text v0.40.0 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20260803160001-6ac0973c030d // indirect
 	google.golang.org/grpc v1.83.0 // indirect
-	google.golang.org/protobuf v1.36.11 // indirect
+	google.golang.org/protobuf v1.36.12 // indirect
 )
