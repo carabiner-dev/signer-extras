@@ -1,7 +1,7 @@
 # Carabiner Signer Extras
 
 This repository will contain extra providers and plugins for the
-[Carabiner Signer library](https://github.com/carabiner-dev/signer).
+[Carabiner Signer library](https://github.com/policylabs/signer).
 The idea is to keep the packages in this repo separate to ensure
 the core signer has a smaller dependency footprint unless all the
 packages in this repository are required.

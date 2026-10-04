@@ -4,7 +4,7 @@
 package sts
 
 import (
-	"github.com/carabiner-dev/signer-extras/sts/providers/spiffe"
+	"github.com/policylabs/signer-extras/sts/providers/spiffe"
 )
 
 // RegisterExtraProviders registers all the providers from the

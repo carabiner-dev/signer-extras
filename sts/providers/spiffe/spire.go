@@ -9,7 +9,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/carabiner-dev/signer/sts"
+	"github.com/policylabs/signer/sts"
 	"github.com/sigstore/sigstore/pkg/oauthflow"
 	"github.com/spiffe/go-spiffe/v2/svid/jwtsvid"
 	"github.com/spiffe/go-spiffe/v2/workloadapi"
