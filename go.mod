@@ -5,7 +5,7 @@ go 1.26.0
 require (
 	github.com/policylabs/signer v0.6.3
 	github.com/sigstore/sigstore v1.10.9
-	github.com/spiffe/go-spiffe/v2 v2.8.2
+	github.com/spiffe/go-spiffe/v2 v2.9.0
 )
 
 require (
